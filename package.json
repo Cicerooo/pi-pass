@@ -1,0 +1,27 @@
+{
+  "name": "pi-pass",
+  "version": "1.0.0",
+  "description": "password manager for rasbpberry pi",
+  "main": "server.js",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "nodemon": "^1.19.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "postinstall": "npm run webpack",
+    "webpack": "./node_modules/webpack/bin/webpack.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "npm run webpack -- -w & nodemon --ignore src/ --ignore dist/ server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheIceRo/pi-pass.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheIceRo/pi-pass/issues"
+  },
+  "homepage": "https://github.com/TheIceRo/pi-pass#readme"
+}
