@@ -1,7 +1,9 @@
 //Requires
+const express = require('express');
 const app = express();
 const path = require('path');
 const chalk = require('chalk');
+const morgan = require('morgan');
 //Static Routes
 app.use('/dist', express.static(path.join(__dirname, 'dist')));
 app.use(morgan('dev')) // logging
