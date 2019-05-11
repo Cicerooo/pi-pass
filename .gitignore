@@ -2,7 +2,10 @@
 logs
 *.log
 
+# Runtime data
+pids
+*.pid
+*.seed
+
 /node_modules
 */node_modules
-
-/styles/*.css
